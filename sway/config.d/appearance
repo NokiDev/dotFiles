@@ -1,0 +1,33 @@
+## COLORS declaration
+set $black    #080808
+set $red      #F51024
+set $green    #4E9A06
+set $yellow   #C4A000
+set $blue     #254775
+set $magenta  #75507B
+set $cyan     #06989A
+set $gray     #A5A5A5
+set $darkgray #555753
+set $lred     #FF4444
+set $lgreen    #74FF00
+set $lyellow  #FCE94F
+set $lblue    #4A84D8
+set $lmagenta #AD7FA8
+set $lcyan    #34E2E2
+set $white    #EEEEEC
+
+# Color                   border    background text    indicator  child_border
+  client.focused          $lmagenta $black     $gray   $lmagenta  $lmagenta
+  client.focused_inactive $gray     $black     $gray   $gray      $gray
+  client.unfocused        $black    $black     $gray   $black     $magenta
+  client.urgent           $lgreen   $black     $gray   $lgreen    $lmagenta   
+
+# Gaps
+ 
+gaps edge_gaps on
+gaps inner 5
+gaps outer 10
+
+default_border pixel 1
+default_floating_border pixel 1
+hide_edge_borders smart

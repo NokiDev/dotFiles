@@ -1,0 +1,43 @@
+source /usr/share/zsh/share/antigen.zsh
+
+# Load the oh-my-zsh's library.
+antigen use oh-my-zsh
+
+# Bundles from the default repo (robbyrussell's oh-my-z$
+antigen bundle git
+antigen bundle heroku
+antigen bundle pip
+antigen bundle lein
+antigen bundle command-not-found
+antigen bundle sudo
+
+# Syntax highlighting bundle.
+antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle zsh-users/zsh-completions
+antigen bundle zsh-users/zsh-autosuggestions
+
+## Screen saver
+antigen bundle psprint/zsh-morpho
+# select screen saver "zmorpho"; available: zmorpho, zm$
+zstyle ":morpho" screen-saver "zmorpho"
+                                        # this  can als$
+# arguments given to screen saver program; -s - every k$
+zstyle ":morpho" arguments "-s"
+# 5 minutes before screen saver starts
+zstyle ":morpho" delay "260"
+# check every 1 minute if to run scr
+zstyle ":morpho" check-interval "60"
+
+# ALIAS TIPS
+antigen bundle "MichaelAquilina/zsh-you-should-use"
+
+antigen bundle KasperChristensen/mylocation
+
+antigen bundle wfxr/forgit
+antigen bundle b4b4r07/enhancd
+
+# Load the theme.
+antigen theme denysdovhan/spaceship-prompt spaceship
+#antigen theme robbyrussel
+# Tell Antigen that you're done.
+antigen apply

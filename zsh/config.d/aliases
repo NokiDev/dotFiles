@@ -1,0 +1,45 @@
+## ALIASES
+alias ezsh="nano ~/.zshrc"
+alias rzsh="source ~/.zshrc"
+alias cat='bat'
+alias ping='prettyping --nolegend'
+alias preview="fzf --height 40% --preview 'if file -i {}|grep -q binary; then file -b {}; else bat --color \"always\" --line-range :40 {}; fi'"
+
+## FZF CONFIG
+# add support for ctrl+o to open selected file in VS Code
+export FZF_DEFAULT_OPTS="--bind='ctrl-o:execute(code {})+abort'"
+export FORGIT_FZF_DEFAULT_OPTS="
+--exact
+--border
+--cycle
+--reverse
+--height '80%'
+"
+# export FZF_DEFAULT_COMMAND='fd --type f'
+# export FZF_COMPLETION_TRIGGER='**'
+
+# Use fd (https://github.com/sharkdp/fd) instead of the default find
+# command for listing path candidates.
+# - The first argument to the function ($1) is the base path to start traversal
+# - See the source code (completion.{bash,zsh}) for the details.
+#_fzf_compgen_path() {
+#  fd --hidden --follow --exclude ".git" . "$1"
+#}
+
+# Use fd to generate the list for directory completion
+#_fzf_compgen_dir() {
+#  fd --type d --hidden --follow --exclude ".git" . "$1"
+#}
+alias top='htop'
+# TODO add other exclusion.
+alias du="ncdu --color dark -rr -x --exclude .git --exclude node_modules"
+
+alias ls="exa --git"
+alias ll="ls -lh"
+alias la="ls -lhaa"
+
+alias help='tldr'
+alias nano="nano --linenumbers --tabstospaces"
+
+
+

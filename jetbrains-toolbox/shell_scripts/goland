@@ -1,0 +1,5 @@
+#!/bin/sh
+#Generated with love at Fri Oct 26 10:15:56 2018 by JetBrains Toolbox 1.11.4269 (Aug 30 2018)
+
+"/home/b1u3dr4g0nf1y/.local/share/JetBrains/Toolbox/apps/Goland/ch-0/182.4505.32/bin/goland.sh" "$@"
+

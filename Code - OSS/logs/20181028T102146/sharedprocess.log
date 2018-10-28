@@ -1,0 +1,20 @@
+[2018-10-28 10:21:49.757] [sharedprocess] [info] main {"machineId":"1a4b3823ae4d0836360964a6aa2189aa6a988a6a5ed4a07e65fde6948953ecc9"}
+[2018-10-28 10:21:49.781] [sharedprocess] [info] Scanned user extensions: 4
+[2018-10-28 10:21:49.800] [sharedprocess] [info] Scanned user extensions: 4
+[2018-10-28 10:21:49.803] [sharedprocess] [info] Scanned user extensions: 4
+[2018-10-28 10:21:49.862] [sharedprocess] [info] Deleted from disk yzhang.markdown-all-in-one-1.6.0
+[2018-10-28 10:21:49.872] [sharedprocess] [info] Scanned system extensions: 71
+[2018-10-28 10:21:49.872] [sharedprocess] [info] Scanned system extensions: 71
+[2018-10-28 10:21:50.738] [sharedprocess] [info] Scanned user extensions: 4
+[2018-10-28 10:21:51.102] [sharedprocess] [info] Installing extension: markdown-preview-enhanced
+[2018-10-28 10:21:51.115] [sharedprocess] [info] Scanned user extensions: 4
+[2018-10-28 10:21:53.214] [sharedprocess] [info] Downloaded extension: markdown-preview-enhanced /tmp/9ee763f2-7c4f-4635-b690-444b1cf31f46
+[2018-10-28 10:21:58.875] [sharedprocess] [info] Extracted extension to /home/b1u3dr4g0nf1y/.vscode-oss/extensions/.shd101wyy.markdown-preview-enhanced-0.3.9: shd101wyy.markdown-preview-enhanced-0.3.9
+[2018-10-28 10:21:58.876] [sharedprocess] [info] Renamed to /home/b1u3dr4g0nf1y/.vscode-oss/extensions/shd101wyy.markdown-preview-enhanced-0.3.9
+[2018-10-28 10:21:58.876] [sharedprocess] [info] Installation completed. shd101wyy.markdown-preview-enhanced-0.3.9
+[2018-10-28 10:21:58.889] [sharedprocess] [info] Extensions installed successfully: shd101wyy.markdown-preview-enhanced
+[2018-10-28 10:21:59.004] [sharedprocess] [info] Scanned user extensions: 4
+[2018-10-28 10:21:59.040] [sharedprocess] [info] Scanned system extensions: 71
+[2018-10-28 10:22:29.760] [sharedprocess] [info] Starting to clean up unused language packs.
+[2018-10-28 10:26:51.794] [sharedprocess] [info] Scanned user extensions: 4
+[2018-10-28 10:31:51.813] [sharedprocess] [info] Scanned user extensions: 4

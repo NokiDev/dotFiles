@@ -1,0 +1,4 @@
+[Info  - 11:29:17 PM] Using tsserver from: /usr/lib/code/extensions/node_modules/typescript/lib
+[Info  - 11:29:17 PM] Forking TSServer
+PATH: /usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl 
+[Info  - 11:29:17 PM] Started TSServer

@@ -1,0 +1,19 @@
+set $term termite
+set $menu rofi -show run
+set $locker swaylock
+set $browser firefox -P null ## Start firefox with no default profile.
+
+bindsym $mod+Return exec $term
+bindsym $mod+d exec $menu
+
+bindsym Print exec swaygrab ## Don't works, TODO
+
+## LOCKER
+exec swayidle \
+    timeout 300 'swaylock' \
+    timeout 600 'swaymsg "output * dpms off"' \
+       resume 'swaymsg "output * dpms on"' \
+    before-sleep 'swaylock'
+bindsym $mod+l exec $locker
+
+bindsym $mod+b exec $browser

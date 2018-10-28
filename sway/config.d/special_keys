@@ -1,0 +1,34 @@
+set $volumeUp pactl set-sink-volume $(pacmd list-sinks |awk '/* index:/{print $3}') +5%
+set $volumeDown pactl set-sink-volume $(pacmd list-sinks |awk '/* index:/{print $3}') -5%
+set $volumeMute pactl set-sink-mute $(pacmd list-sinks |awk '/* index:/{print $3}') toggle
+
+set $micOff pactl set-source-mute 1 toggle
+set $micOn  pactl set-source-mute 1 false
+
+set $backlightUp light -A 5
+set $backlightDown light -U 5
+set $backlightMin light -S 0.00
+set $backlightMax light -S $(light -G -m)
+
+
+#
+# Special Keys
+#
+bindsym XF86AudioRaiseVolume exec $volumeUp
+bindsym XF86AudioLowerVolume exec $volumeDown
+bindsym XF86AudioMute exec $volumeMute
+bindsym XF86MonBrightnessDown exec $backlightUp
+bindsym XF86MonBrightnessUp exec $backlightDown
+
+## TODO add mic ON OFF
+
+# TODO Configure.
+bindsym XF86AudioPlay exec mpc toggle
+bindsym XF86AudioStop exec mpc stop
+bindsym XF86AudioNext exec mpc next
+bindsym XF86AudioPrev exec mpc cdprev
+
+bindsym Shift+XF86AudioPlay exec playerctl play-pause
+bindsym Shift+XF86AudioStop exec playerctl stop
+bindsym Shift+XF86AudioNext exec playerctl next
+bindsym Shift+XF86AudioPrev exec playerctl previous
