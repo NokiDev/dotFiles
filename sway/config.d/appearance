@@ -23,8 +23,7 @@ set $white    #EEEEEC
   client.urgent           $lgreen   $black     $gray   $lgreen    $lmagenta   
 
 # Gaps
- 
-gaps edge_gaps on
+
 gaps inner 5
 gaps outer 10
 

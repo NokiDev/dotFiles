@@ -1,0 +1,1 @@
+man $(ls /usr/bin | shuf -n 1)| sed -n "/^NAME/ { n;p;q }"

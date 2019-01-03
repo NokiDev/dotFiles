@@ -1,5 +1,5 @@
 set $term termite
-set $menu rofi -show run
+set $menu rofi -show drun -show-icons
 set $locker swaylock
 set $browser firefox -P null ## Start firefox with no default profile.
 
@@ -10,8 +10,8 @@ bindsym Print exec swaygrab ## Don't works, TODO
 
 ## LOCKER
 exec swayidle \
-    timeout 300 'swaylock' \
-    timeout 600 'swaymsg "output * dpms off"' \
+    timeout 300 "if swaymsg -t get_tree | jq '.nodes[]?.nodes[]?.nodes[]? | {focused, fullscreen_mode} | select(.focused == true) | .fullscreen_mode?' | grep 0; then swaylock;fi" \
+    timeout 600 "if swaymsg -t get_tree | jq '.nodes[]?.nodes[]?.nodes[]? | {focused, fullscreen_mode} | select(.focused == true) | .fullscreen_mode?' | grep 0; then swaymsg 'output * dpms off' ; fi"\
        resume 'swaymsg "output * dpms on"' \
     before-sleep 'swaylock'
 bindsym $mod+l exec $locker

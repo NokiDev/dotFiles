@@ -30,10 +30,10 @@ set $right l
 # Moving around:
 #
     # Move your focus around
-    bindsym $mod+$left focus left
-    bindsym $mod+$down focus down
-    bindsym $mod+$up focus up
-    bindsym $mod+$right focus right
+    #bindsym $mod+$left focus left
+    #bindsym $mod+$down focus down
+    #bindsym $mod+$up focus up
+    #bindsym $mod+$right focus right
     # or use $mod+[up|down|left|right]
     bindsym $mod+Left focus left
     bindsym $mod+Down focus down
@@ -65,8 +65,9 @@ set $right l
     bindsym $mod+9 workspace 9
     bindsym $mod+0 workspace 10
     bindsym $mod+q workspace http
-    bindsym $mod+w workspace music
-   # bindsym $mod+E workspace music "Music >"
+    #bindsym $mod+a workspace XBMC
+    #bindsym $mod+w workspace music
+    #bindsym $mod+E workspace music "Music >"
 
     # move focused container to workspace
     bindsym $mod+Shift+1 move container to workspace 1
@@ -106,7 +107,7 @@ set $right l
     #bindsym $mod+space focus mode_toggle
 
     # move focus to the parent container
-    bindsym $mod+a focus parent
+    #bindsym $mod+a focus parent
 #
 # Scratchpad:
 #
@@ -144,6 +145,7 @@ mode "resize" {
 }
 
 bindsym $mod+r mode "resize"
+
 
 include /etc/sway/config.d/*
 include ./config.d/*

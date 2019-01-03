@@ -10,7 +10,6 @@ set $backlightDown light -U 5
 set $backlightMin light -S 0.00
 set $backlightMax light -S $(light -G -m)
 
-
 #
 # Special Keys
 #

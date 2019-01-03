@@ -5,6 +5,8 @@ for_window [class="^.*"] border pixel 2
 for_window [title=".*Mozilla Firefox.*"] border none
 assign [title=".*Mozilla Firefox.*"] workspace http
 
+assign [title=".*Kodi*"] workspace XBMC
+
 #for_window [title=".*TelegramDesktop.*"] floating enable
 #for_window [title=".*TelegramDesktop.*"] floating enable
 

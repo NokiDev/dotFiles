@@ -12,6 +12,11 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
-source $XDG_CONFIG_HOME/zsh/config.d/antigen
-source $XDG_CONFIG_HOME/zsh/config.d/env
-source $XDG_CONFIG_HOME/zsh/config.d/aliases
+ZSH_CONFIG_D=$XDG_CONFIG_HOME/zsh/config.d
+
+source $ZSH_CONFIG_D/startup
+source $ZSH_CONFIG_D/antigen
+source $ZSH_CONFIG_D/env
+source $ZSH_CONFIG_D/android_dev
+source $ZSH_CONFIG_D/aliases
+source $ZSH_CONFIG_D/wayland

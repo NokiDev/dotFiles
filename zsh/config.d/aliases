@@ -41,5 +41,7 @@ alias la="ls -lhaa"
 alias help='tldr'
 alias nano="nano --linenumbers --tabstospaces"
 
-
-
+# List Listening Ports
+alias lsports='lsof -Pan -i tcp -i udp'
+# Kill Zombies
+alias zkill='ps ax -o state -o ppid | awk '$1=="Z"{print $2}' | xargs kill -9'

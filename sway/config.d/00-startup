@@ -1,2 +1,1 @@
-exec pulseaudio --start
 exec_always export _JAVA_AWT_WM_NONREPARENTING=1
