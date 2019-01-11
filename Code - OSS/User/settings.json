@@ -1,6 +1,0 @@
-{
-    "editor.fontFamily": "'Droid Sans Mono Nerd Font Complete Mono','Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
-    "workbench.iconTheme": "material-icon-theme",
-    "files.autoSave": "afterDelay",
-    "files.useExperimentalFileWatcher": true
-}
