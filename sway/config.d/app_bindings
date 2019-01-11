@@ -1,5 +1,6 @@
 set $term termite
 set $menu rofi -show drun -show-icons
+
 set $locker swaylock
 set $browser firefox -P null ## Start firefox with no default profile.
 

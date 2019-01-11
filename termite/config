@@ -1,7 +1,7 @@
 [options]
 #allow_bold = true
 #audible_bell = false
-#clickable_url = true
+clickable_url = true
 #dynamic_title = true
 font = "DejaVu Sans Mono Nerd Font Complete" 15
 #fullscreen = true
@@ -14,7 +14,7 @@ font = "DejaVu Sans Mono Nerd Font Complete" 15
 scrollback_lines = 10000
 #search_wrap = true
 #urgent_on_bell = true
-#hyperlinks = false
+hyperlinks = true
 
 # $BROWSER is used by default if set, with xdg-open as a fallback
 #browser = xdg-open

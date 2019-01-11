@@ -2,13 +2,12 @@
     border: none;
     border-radius: 0;
     font-family: Roboto, Helvetica, Arial, sans-serif;
-    font-size: 13px;
+    font-size: 15px;
     min-height: 0;
 }
 
 window#waybar {
     background: rgba(43, 48, 59, 0.5);
-    border-bottom: 3px solid rgba(100, 114, 125, 0.5);
     color: white;
 }
 
@@ -16,17 +15,17 @@ window#waybar {
     padding: 0 5px;
     background: transparent;
     color: white;
-    border-bottom: 3px solid transparent;
+	border-bottom: 5px solid rgba(100, 114, 125, 0.5);
 }
 
 #workspaces button.focused {
     background: #64727D;
-    border-bottom: 3px solid white;
+    border-bottom: 5px solid white;
 }
 
 #mode {
     background: #64727D;
-    border-bottom: 3px solid white;
+    border-bottom: 5px solid white;
 }
 
 #clock, #battery, #cpu, #memory, #network, #pulseaudio, #tray, #mode {
@@ -35,28 +34,51 @@ window#waybar {
 }
 
 #clock {
-    background-color: #64727D;
+	font-size:18px;
+	background-color: transparent;
+	border-bottom: 5px solid #ffffff;
 }
 
 #battery {
-    background-color: #ffffff;
-    color: black;
+	/*
+	background-color: transparent;
+	color: white;
+	*/
+	color: white;
+	border-bottom : 5px solid #37b784;
 }
 
-#battery.charging {
+#battery2 {
+    background-color: transparent;
     color: white;
-    background-color: #26A65B;
 }
 
 @keyframes blink {
     to {
-        background-color: #ffffff;
-        color: black;
+        border-bottom: 5px solid #ffffff;
+        color: white;
     }
 }
 
+#battery.full {
+	color: white;
+	background-color:  #37b784;
+}
+
+
+#battery.charging {
+    color: white;
+	background-color: #f1c40f;
+	border-bottom: 5px solid #f1c40f;
+	animation-name: blink;
+    animation-duration: 1.0s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
 #battery.warning:not(.charging) {
-    background: #f53c3c;
+    border-bottom: 5px solid #f53c3c;
     color: white;
     animation-name: blink;
     animation-duration: 0.5s;
@@ -65,26 +87,36 @@ window#waybar {
     animation-direction: alternate;
 }
 
+#battery.critical:not(.charging) {
+	background: #f53c3c;
+	border-bottom: 5px solid #f53c3c;
+	animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    color: white;
+}
+
 #cpu {
-    background: #2ecc71;
-    color: #000000;
+	border-bottom: 5px solid #2ecc71;
 }
 
 #memory {
-    background: #9b59b6;
+    border-bottom: 5px solid #9b59b6;
 }
 
 #network {
-    background: #2980b9;
+    border-bottom: 5px solid #2980b9;
 }
 
 #network.disconnected {
-    background: #f53c3c;
+    border-bottom: 5px solid #f53c3c;
 }
 
 #pulseaudio {
-    background: #f1c40f;
-    color: black;
+	border-bottom: 5px solid #fffd80;
+	background: transparent;
 }
 
 #pulseaudio.muted {

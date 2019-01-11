@@ -12,6 +12,11 @@ autoload -Uz compinit
 compinit
 # End of lines added by compinstall
 
+if [[ $TERM == xterm-termite ]]; then
+        . /etc/profile.d/vte.sh
+        __vte_osc7
+fi
+
 ZSH_CONFIG_D=$XDG_CONFIG_HOME/zsh/config.d
 
 source $ZSH_CONFIG_D/startup
@@ -20,3 +25,4 @@ source $ZSH_CONFIG_D/env
 source $ZSH_CONFIG_D/android_dev
 source $ZSH_CONFIG_D/aliases
 source $ZSH_CONFIG_D/wayland
+source $ZSH_CONFIG_D/bluetooth

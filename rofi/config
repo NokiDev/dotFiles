@@ -51,10 +51,10 @@ configuration {
 /*	click-to-exit: true;*/
 /*	show-match: true;*/
 /*	theme: ;*/
-/*	color-normal: ;*/
-/*	color-urgent: ;*/
-/*	color-active: ;*/
-/*	color-window: ;*/
+	color-normal: "#222222, #b1b4b3, #222222, #005577, #b1b4b3";
+	color-urgent: "#222222, #b1b4b3, #222222, #007763, #b1b4b3";
+	color-active: "#222222, #b1b4b3, #222222, #007763, #b1b4b3";
+	color-window: "#222222, #222222, #b1b4b3";
 /*	max-history-size: 25;*/
 /*	combi-hide-mode-prefix: false;*/
 /*	pid: "/run/user/1000/rofi.pid";*/
@@ -137,3 +137,4 @@ configuration {
 /*	me-accept-entry: "MouseDPrimary";*/
 /*	me-accept-custom: "Control+MouseDPrimary";*/
 }
+rofi.theme: /home/b1u3dr4g0nf1y/.config/rofi/themes/theme_gba.rasi
