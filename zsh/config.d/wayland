@@ -1,2 +1,15 @@
-
 alias code='GDK_BACKEND=x11 /usr/bin/code 2>/dev/null'
+alias telegram-desktop='QT_QPA_PLATFORM=xcb && telegram-desktop'
+alias firefox='GDK_BACKEND=x11 && firefox'
+alias thunderbird='GDK_BACKEND=x11 && thunderbird'
+## WAYLAND SUPPORT
+export QT_QPA_PLATFORM=wayland-egl
+export GDK_BACKEND=wayland
+export CLUTTER_BACKEND=wayland
+export SDL_VIDEODRIVER=wayland
+export ECORE_EVAS_ENGINE=wayland_egl
+export ELM_ENGINE=wayland_egl
+export _JAVA_AWT_WM_NONREPARENTING=1
+
+## Uncomment only if needed.
+export QT_WAYLAND_DISABLE_WINDOWDECORATION="1"

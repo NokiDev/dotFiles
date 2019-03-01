@@ -17,4 +17,4 @@
 #    }
 #}
 
-exec waybar
+# exec waybar > /home/noki/waybar.log

@@ -41,7 +41,25 @@ alias la="ls -lhaa"
 alias help='tldr'
 alias nano="nano --linenumbers --tabstospaces"
 
+alias diff='diff --color=auto'
+alias grep='grep --color=auto'
+export GREP_COLOR="1;32"
 # List Listening Ports
 alias lsports='lsof -Pan -i tcp -i udp'
 # Kill Zombies
 alias zkill='ps ax -o state -o ppid | awk '$1=="Z"{print $2}' | xargs kill -9'
+
+alias wifi-menu='_ wifi-menu -o'
+alias uptime='uptime -p'
+alias ssh='kitty + kitten ssh'
+
+man() {
+    LESS_TERMCAP_md=$'\e[01;31m' \
+    LESS_TERMCAP_me=$'\e[0m' \
+    LESS_TERMCAP_se=$'\e[0m' \
+    LESS_TERMCAP_so=$'\e[01;44;33m' \
+    LESS_TERMCAP_ue=$'\e[0m' \
+    LESS_TERMCAP_us=$'\e[01;32m' \
+    command man "$@"
+}
+

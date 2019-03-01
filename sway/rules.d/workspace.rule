@@ -3,14 +3,12 @@
 for_window [class="^.*"] border pixel 2
 
 for_window [title=".*Mozilla Firefox.*"] border none
-assign [title=".*Mozilla Firefox.*"] workspace http
+assign [title=".*Mozilla Firefox.*"] workspace 2.http
 
-assign [title=".*Kodi*"] workspace XBMC
-
-#for_window [title=".*TelegramDesktop.*"] floating enable
-#for_window [title=".*TelegramDesktop.*"] floating enable
-
-#for_window [title=".*TelegramDesktop.*"] sticky enable
+assign [title=".*Telegram.*"] workspace 4.msg
+assign [title=".*Slack.*"] workspace 4.msg
+assign [title=".*Discord.*"] workspace 4.msg
+assign [title=".*Thunderbird.*"] workspace 3.mail
 
 
 exec swaymsg mouse_warping container

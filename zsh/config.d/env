@@ -9,10 +9,10 @@ export GIT_TERMINAL_PROMPT=1
 # TELL GIT TO USE SSH
 export GIT_SSH_VARIANT=ssh
 # USE termite as Gterminal
-export TERMINAL=termite
+export TERMINAL=kitty
 export BROWSER=firefox
 #
-export EDITOR=nano
+export EDITOR=vim
 # LANGUAGE ENV SETUP
 export LANG=en_US.UTF-8
 
@@ -29,15 +29,3 @@ export LESS_TERMCAP_us=$(printf "\e[1;32m")
 export CFLAGS="-W"
 export CPPFLAGS="-W"
 export ARCH="x86_64"
-
-## WAYLAND SUPPORT
-export QT_QPA_PLATFORM=wayland-egl
-export GDK_BACKEND=wayland
-export CLUTTER_BACKEND=wayland
-export SDL_VIDEODRIVER=wayland
-export ECORE_EVAS_ENGINE=wayland_egl
-export ELM_ENGINE=wayland_egl
-export _JAVA_AWT_WM_NONREPARENTING=1
-
-## Uncomment only if needed.
-export QT_WAYLAND_DISABLE_WINDOWDECORATION="1"

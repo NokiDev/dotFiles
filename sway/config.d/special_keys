@@ -16,8 +16,8 @@ set $backlightMax light -S $(light -G -m)
 bindsym XF86AudioRaiseVolume exec $volumeUp
 bindsym XF86AudioLowerVolume exec $volumeDown
 bindsym XF86AudioMute exec $volumeMute
-bindsym XF86MonBrightnessDown exec $backlightUp
-bindsym XF86MonBrightnessUp exec $backlightDown
+bindsym XF86MonBrightnessDown exec $backlightDown
+bindsym XF86MonBrightnessUp exec $backlightUp
 
 ## TODO add mic ON OFF
 

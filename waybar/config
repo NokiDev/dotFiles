@@ -12,7 +12,7 @@
 		"memory",
 		"pulseaudio",
 		"battery",
-		//"battery#bat2",
+		"battery#bat2",
 		"network"
 	],
     // Modules configuration
@@ -21,11 +21,11 @@
         "all-outputs": true,
         "format": "{name}: {icon}",
         "format-icons": {
-            "1": "",
-            "2": "",
-            "3": "",
-            "4": "",
-            "5": "",
+            "1.cli": "",
+            "2.http": "",
+            "3.mail": "",
+            "5.music": "",
+            "4.msg": "",
             "urgent": "",
             "focused": "",
             "default": ""
@@ -48,6 +48,18 @@
         "format": "{}% "
     },
     "battery": {
+		"bat": "BAT0",
+		"interval" : 60,
+        "states": {
+        	"good": 95,
+    		"warning": 30,
+        	"critical": 15
+    	},
+    	"format": "{capacity}% {icon}",
+        "format-icons": ["", "", "", "", ""],
+		"max-length": 25
+    },
+    "battery#bat2": {
 		"bat": "BAT1",
 		"interval" : 60,
         "states": {
@@ -59,20 +71,6 @@
         "format-icons": ["", "", "", "", ""],
 		"max-length": 25
     },
-	/* 2nd Battery Support Get Ready for T580
-	"battery#bat2": {
-		"bat": "BAT2",
-		"interval" : 60,
-        "states": {
-        	"good": 95,
-    		"warning": 30,
-        	"critical": 15
-    	},
-    	"format": "{capacity}% {icon}",
-        "format-icons": ["", "", "", "", ""],
-		"max-length": 25
-    },
-	*/
     "network": {
         "format-wifi": "{ipaddr} - {essid} ({signalStrength}%) ",
         "format-ethernet": "{ifname}: {ipaddr}/{cidr} ",

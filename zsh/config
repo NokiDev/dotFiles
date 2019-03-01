@@ -11,11 +11,18 @@ zstyle :compinstall filename '/home/b1u3dr4g0nf1y/.zshrc'
 autoload -Uz compinit
 compinit
 # End of lines added by compinstall
+if [[ $TERM == xterm-kitty ]]; then
+        kitty + complete setup zsh | source /dev/stdin
+        # Specific kitty aliases.
+        alias icat="kitty +kitten icat"
+fi
 
 if [[ $TERM == xterm-termite ]]; then
         . /etc/profile.d/vte.sh
         __vte_osc7
 fi
+
+
 
 ZSH_CONFIG_D=$XDG_CONFIG_HOME/zsh/config.d
 
@@ -26,3 +33,5 @@ source $ZSH_CONFIG_D/android_dev
 source $ZSH_CONFIG_D/aliases
 source $ZSH_CONFIG_D/wayland
 source $ZSH_CONFIG_D/bluetooth
+# Load nvm. TODO move to node devel.
+source /usr/share/nvm/init-nvm.sh

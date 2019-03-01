@@ -16,18 +16,6 @@ antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-completions
 antigen bundle zsh-users/zsh-autosuggestions
 
-## Screen saver
-antigen bundle psprint/zsh-morpho
-# select screen saver "zmorpho"; available: zmorpho, zm$
-zstyle ":morpho" screen-saver "zmorpho"
-                                        # this  can als$
-# arguments given to screen saver program; -s - every k$
-zstyle ":morpho" arguments "-s"
-# 5 minutes before screen saver starts
-zstyle ":morpho" delay "260"
-# check every 1 minute if to run scr
-zstyle ":morpho" check-interval "60"
-
 # ALIAS TIPS
 antigen bundle "MichaelAquilina/zsh-you-should-use"
 
