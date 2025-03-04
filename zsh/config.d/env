@@ -1,14 +1,14 @@
 # USED FOR GO DEVELOPMENT
 export GOPATH=$HOME/go
 
-export PATH=$GOPATH/bin/:$PATH
+export PATH=$GOPATH/bin/:$HOME/.local/bin:$PATH
 export GOBIN=$GOPATH/bin
 
 # TELL GIT TO PROMPT FOR USERNAME /PASSWORD
 export GIT_TERMINAL_PROMPT=1
 # TELL GIT TO USE SSH
 export GIT_SSH_VARIANT=ssh
-# USE termite as Gterminal
+# USE kitty as Gterminal
 export TERMINAL=kitty
 export BROWSER=firefox
 #

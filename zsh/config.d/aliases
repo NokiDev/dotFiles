@@ -1,6 +1,6 @@
 ## ALIASES
-alias ezsh="nano ~/.zshrc"
-alias rzsh="source ~/.zshrc"
+alias dot="chezmoi"
+
 alias cat='bat'
 alias ping='prettyping --nolegend'
 alias preview="fzf --height 40% --preview 'if file -i {}|grep -q binary; then file -b {}; else bat --color \"always\" --line-range :40 {}; fi'"

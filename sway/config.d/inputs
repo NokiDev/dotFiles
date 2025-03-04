@@ -3,5 +3,10 @@ input 1:1:AT_Translated_Set_2_keyboard {
     xkb_options cap:espace
     xkb_options grp:win_space_toggle
     xkb_numlock enabled
-}
+ }
 
+input 1739:0:Synaptics_TM3276-031 {
+
+    events disabled
+
+}

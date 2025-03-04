@@ -1,5 +1,6 @@
+
 set $term kitty
-set $menu zsh -c "export GDK_BACKEND=x11 && export QT_QPA_PLATFORM=xcb && rofi -show drun -show-icons"
+set $menu wofi --show drun -show-icons
 
 set $locker swaylock
 

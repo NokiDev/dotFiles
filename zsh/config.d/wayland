@@ -1,7 +1,8 @@
-alias code='GDK_BACKEND=x11 /usr/bin/code 2>/dev/null'
+alias code='code'
 alias telegram-desktop='QT_QPA_PLATFORM=xcb && telegram-desktop'
 alias firefox='GDK_BACKEND=x11 && firefox'
 alias thunderbird='GDK_BACKEND=x11 && thunderbird'
+alias discord='GDK_BACKEND=x11 && discord'
 ## WAYLAND SUPPORT
 export QT_QPA_PLATFORM=wayland-egl
 export GDK_BACKEND=wayland

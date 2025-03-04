@@ -1,7 +1,7 @@
 ignore-empty-password
 image=$PWD/.config/swaylock/the-residents-tmp.png
 
-#color=1ACE95FF
+color=1ACE95FF
 indicator-radius=195
 indicator-thickness=140
 bs-hl-color=EE0000
